@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+	
+   
+    
+     <LinearLayout
+         android:id="@+id/ll1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/textView1"
+         android:orientation="vertical" >
+    	 
+        <TextView
+	        android:id="@+id/title_textview"
+	        android:textColor="@android:color/black"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:gravity="center"
+	        android:text="Title"
+	        android:textStyle="bold" />
+        
+        
+        <EditText
+            android:id="@+id/title_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="put title here"
+            android:inputType="textCapWords"
+            android:nextFocusDown="@id/title_edit"
+            android:nextFocusUp="@id/title_edit"
+            android:singleLine="true" />         
+     </LinearLayout> 
+     
+     <LinearLayout
+         android:id="@+id/ll2"
+         android:layout_width="match_parent"
+         android:layout_height="fill_parent"
+         android:layout_above="@+id/new_record"
+         android:layout_below="@id/ll1"
+         android:orientation="vertical" >
+    	 
+        <LinearLayout
+         android:id="@+id/ll3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         
+        <TextView
+	        android:id="@+id/content_textview"
+	        android:textColor="@android:color/black"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:gravity="left"
+	        android:text="Content"
+	        android:textStyle="bold" />        
+            
+        </LinearLayout>
+        
+		<RelativeLayout
+		    android:id="@+id/ll4"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_above="@+id/new_record"
+		    android:scrollbars="horizontal"
+		     >
+
+		    <EditText
+		        android:id="@+id/content_edit"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:gravity="top|left"
+		        android:inputType="textMultiLine"
+		        android:layout_toLeftOf="@+id/iv1"
+		        
+		        android:nextFocusDown="@id/content_edit"
+		        android:nextFocusUp="@id/content_edit"
+		        android:scrollbars="vertical"
+		        android:singleLine="false" />
+
+		    <ImageView
+		        android:id="@id/iv1"
+		        android:layout_width="73dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="right|top"
+		        android:layout_alignParentRight="true"
+		        android:onClick="openImageDialog"	        
+		        android:src="@drawable/i_img" />
+		</RelativeLayout>
+         
+     </LinearLayout>    
+     
+     
+    <Button 
+        android:id="@id/new_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert New Article"
+        android:layout_alignParentBottom="true"
+        android:onClick="InsertRecord"/>
+</RelativeLayout>

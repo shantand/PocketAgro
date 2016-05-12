@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:padding="5dp" >
+ 
+    <RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentLeft="true">
+    </ImageView>
+ 
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dip"
+        android:text="fddff"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_toRightOf="@id/logo">
+    </TextView>
+    
+    <ImageButton 
+	    android:id="@+id/icon" 
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+	    android:src="@drawable/delete"
+	    android:onClick="onClick"/>
+    </RelativeLayout>
+ 
+</LinearLayout>

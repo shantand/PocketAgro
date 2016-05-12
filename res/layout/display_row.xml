@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"    
+    android:padding="6dip" >
+
+    <TextView
+        android:id="@+id/title_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:text="Title of the Record ssssss ssssss ssss s sssssssssssss"
+        android:maxLines="20"        
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:typeface="sans" />
+          
+    
+    <TextView
+        android:id="@+id/userLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:textColor="#736F6E"
+        android:text="User"        
+        android:textSize="12sp" />
+
+   
+</LinearLayout> 

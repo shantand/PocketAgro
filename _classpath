@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="C:/Users/sureshg/Desktop/Thesis/Bookmark/TouchDB-AgroCouch/libs/commons-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sureshg/Desktop/Thesis/Bookmark/TouchDB-AgroCouch/libs/couchbase-lite-android.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sureshg/Desktop/Thesis/Bookmark/TouchDB-AgroCouch/libs/couchbase-lite-android-ektorp.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sureshg/Desktop/Thesis/Bookmark/TouchDB-AgroCouch/libs/jackson-core-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sureshg/Desktop/Thesis/Bookmark/TouchDB-AgroCouch/libs/jackson-mapper-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sureshg/Desktop/Thesis/Bookmark/TouchDB-AgroCouch/libs/org.ektorp.android-1.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sureshg/Desktop/Thesis/Bookmark/TouchDB-AgroCouch/libs/org.ektorp-1.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sureshg/Desktop/Thesis/Bookmark/TouchDB-AgroCouch/libs/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sureshg/Desktop/Thesis/Bookmark/TouchDB-AgroCouch/libs/slf4j-jdk14-1.6.1.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/textView1" android:text="@string/app_name" android:layout_width="fill_parent" android:gravity="center_horizontal" android:textStyle="bold" android:background="#4863A0" android:textSize="40px"></TextView>
+    
+    <TextView
+        android:id="@+id/listen_port_textview"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_height="wrap_content"/>
+    <Button 
+        android:id="@+id/replication"
+        android:layout_below="@id/listen_port_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Synchronize">
+        
+    </Button>
+</RelativeLayout>
+

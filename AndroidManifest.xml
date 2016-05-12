@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.agrocouch"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8"
+         />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Google Play filtering --> 
+    <uses-feature android:name="android.hardware.wifi.direct" android:required="true"/>
+    
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true" >
+        <activity
+            android:name="com.agrocouch.UasrMainActivity"
+            android:label="@string/app_name"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.agrocouch.SearchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.agrocouch.GrocerySyncPreferencesActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <service
+            android:name="com.couchbase.android.CouchbaseService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.agrocouch.ResultsPage"
+            android:label="@string/title_activity_results_page" >
+        </activity>
+        <activity
+            android:name="com.agrocouch.BodyView"
+            android:label="@string/title_activity_body_view" >
+        </activity>
+        <activity
+            android:name="com.agrocouch.BookmarkDisplayActivity"
+            android:label="@string/title_activity_bookmark_display" >
+        </activity>
+        <activity
+            android:name="com.agrocouch.BookmarkList"
+            android:label="@string/title_activity_bookmark_list" >
+        </activity>
+        <activity
+            android:name="com.agrocouch.Insert_new_article"
+            android:label="@string/title_activity_insert_new_article"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.agrocouch.BrowseActivity"
+            android:label="@string/title_activity_browse" >
+        </activity>
+        <activity
+            android:name="com.agrocouch.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        
+        <activity
+            android:name=".WiFiDirectActivity"
+            android:label="@string/app_name" android:launchMode="singleTask">
+            </activity>
+            
+        <service android:enabled="true" android:name=".FileTransferService" />
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    
+</manifest>
