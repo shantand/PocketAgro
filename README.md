@@ -2,7 +2,7 @@
 ## PocketAgro - Offline Content with opportunistic synchronization
 
 
-->![](https://github.com/shantand/PocketAgro/blob/master/images/browse_new.png)<-
+![](https://github.com/shantand/PocketAgro/blob/master/images/browse_new.png)
 
 PocketAgro is the native android application having Generic UI component. Generic here refers to the fact that we can use exact same layout to consume any other data. In our thesis we have used same technique to produce multiple copies of Apps for different child databases of Agropedia site.
 
@@ -19,6 +19,10 @@ PocketAgro is the native android application having Generic UI component. Generi
 All these functionalities are explained in the [thesis](https://gautam5.cse.iitk.ac.in/opencs/sites/default/files/12111020.pdf). We have used CouchDb(NoSQL Database) for synchronization because of its excellent replication mechanisms.
 
 We also have tools/scripts(built in Python) running as cron job on server that used to pull data from Server databases and update Drupals core so as to be visible for all web clients.
+
+## Architecture
+![Architecture](https://github.com/shantand/PocketAgro/blob/master/images/archi.pdf)
+
 
 ## Known Issues
 
