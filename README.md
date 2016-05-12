@@ -2,7 +2,8 @@
 ## PocketAgro - Offline Content with opportunistic synchronization
 
 
-![](https://github.com/shantand/PocketAgro/blob/master/images/search_result.png)
+![](https://github.com/shantand/PocketAgro/blob/master/images/search_result.png=250x)
+
 
 PocketAgro is the native android application having Generic UI component. Generic here refers to the fact that we can use exact same layout to consume any other data. In our thesis we have used same technique to produce multiple copies of Apps for different child databases of Agropedia site.
 
@@ -24,3 +25,4 @@ We also have tools/scripts(built in Python) running as cron job on server that u
 
 Though this app is in working condition it will stop working without proper touchdb/sqlite databases in SD card of mobile device. And we can't put up all those data here in public.
 
+## PLEASE DO NOT ASK FOR COMMIT ACCESS.
