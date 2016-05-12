@@ -2,7 +2,7 @@
 ## PocketAgro - Offline Content with opportunistic synchronization
 
 
-![](https://github.com/shantand/PocketAgro/blob/master/images/browse_new.png)
+->![](https://github.com/shantand/PocketAgro/blob/master/images/browse_new.png)<-
 
 PocketAgro is the native android application having Generic UI component. Generic here refers to the fact that we can use exact same layout to consume any other data. In our thesis we have used same technique to produce multiple copies of Apps for different child databases of Agropedia site.
 
