@@ -2,47 +2,25 @@
 ## PocketAgro - Offline Content with opportunistic synchronization
 
 
-![](http://cl.ly/image/1H11131G2c3d/Screen%20Shot%202013-05-14%20at%204.44.48%20PM.png)
+![](https://github.com/shantand/PocketAgro/blob/master/images/search_result.png)
 
-This is a simple example of using the [Couchbase Lite Android](https://github.com/couchbase/couchbase-lite-android) mobile database framework.
-
-The "use case" is a shared grocery list where all devices using the application would see a mirror of the grocery list.  Any changes will automatically background sync with a CouchDB or [Sync Gateway](https://github.com/couchbaselabs/sync_gateway) running in the cloud.  (bi-directional)
-
-## Prerequisites
-
-* You must have the Android SDK installed (which bundles Eclipse Juno).  Here is the page to [Download the Android SDK](http://developer.android.com/sdk/index.html)
-
-## Running
-
-* Do a `git clone` on this repository
-* Open the Android SDK (Eclipse)
-* Choose the File/Import menu
-* Choose Android/Existing Android Code into Workspace
-* Hit Browse.. button, and navigate to GrocerySync-Android directory cloned in earlier step.
-* Hit "Finish"  
-* In Package Explorer, navigate to AndroidGrocerySync/src
-* Right-click com.couchbase.grocerysync package, choose "Run as .." / "Android Application"
-* If the emulator shows a lock icon, hit fn + uparrow to unlock it.  
-
-This should start an Android device emulator and start the GrocerySync app.
-
-## Point it to a custom DB
-
-By default, it will point to a shared database that has a lot of junk data in it.  Here are the instructions to point it to your own DB.
-
-In AndroidGrocerySyncActivity, change all instances of the URL from `http://mschoch.iriscouch.com/grocery-test` to one of the following:
-
-* The URL of your CouchDB instance 
-* The URL of your [Sync Gateway](https://github.com/couchbaselabs/sync_gateway) instance  
-
-In either case, you will need to make sure there is a database named "grocery-test" on the server.
+PocketAgro is the native android application having Generic UI component. Generic here refers to the fact that we can use exact same layout to consume any other data. In our thesis we have used same technique to produce multiple copies of Apps for different child databases of Agropedia site.
 
 
-## Deviations from the iOS version
+## Functionalities
 
-Android typically uses a long-click to trigger additional action, as opposed to swipe-to-delete, so this convention was followed.
+	1. Reading Articles
+	2. Browse
+	3. Search
+	4. Create new Articles
+	5. Peer-to-Peer sharing
+	6. Opportunistic Synchronization with Server.
+
+All these functionalities are explained in the [thesis](https://gautam5.cse.iitk.ac.in/opencs/sites/default/files/12111020.pdf). We have used CouchDb(NoSQL Database) for synchronization because of its excellent replication mechanisms.
+
+We also have tools/scripts(built in Python) running as cron job on server that used to pull data from Server databases and update Drupals core so as to be visible for all web clients.
 
 ## Known Issues
 
-We currently do not handle the Sync URL changing at runtime (if you change it you have to restart the app)
+Though this app is in working condition it will stop working without proper touchdb/sqlite databases in SD card of mobile device. And we can't put up all those data here in public.
 
