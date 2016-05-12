@@ -1,5 +1,5 @@
 
-## Grocery Sync for Couchbase Lite Android 
+## PocketAgro - Offline Content with opportunistic synchronization
 
 
 ![](http://cl.ly/image/1H11131G2c3d/Screen%20Shot%202013-05-14%20at%204.44.48%20PM.png)
